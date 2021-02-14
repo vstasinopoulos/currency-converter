@@ -1,0 +1,24 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/api/v7/convert",
+    "queryParameters": {
+      "q": {
+        "equalTo": "BTC_USD"
+      },
+      "compact": {
+        "equalTo": "ultra"
+      },
+      "apiKey": {
+        "equalTo": "FREE_CONV_KEY"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "body": "{\"BTC_USD\":48685.1146959}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

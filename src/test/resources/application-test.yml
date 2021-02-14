@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    database: H2
+    database-platform: org.hibernate.dialect.H2Dialect
+  datasource:
+    url: jdbc:h2:mem:db
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+
+clients:
+  currencyConverter:
+    baseUrl: http://localhost:${wiremock.server.port}
+    apiKey: FREE_CONV_KEY
+
+scheduler:
+  fixedDelay: 300000
