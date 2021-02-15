@@ -35,7 +35,7 @@ class CurrencyConverterControllerSpec extends IntegrationSpec {
         }
     }
 
-    // TODO Add more test for v1/rates/latest
+    // TODO Add more test for v1/rates/latest, e.g. non happy paths, validations
 
     def "should get historical rates"() {
         given:
@@ -57,9 +57,9 @@ class CurrencyConverterControllerSpec extends IntegrationSpec {
             rate == 48685.11470
         }
 
-        // FIXME Could be flaky in case schedule job runs after test
+        // FIXME Could be flaky in case schedule job runs after test. Moreover should not depend on default wiremock mappings
     }
 
-    // TODO Add more test for v1/rates
+    // TODO Add more test for v1/rates, e.g. non happy paths, validations, preload db, etc.
 
 }
